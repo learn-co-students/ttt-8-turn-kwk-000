@@ -40,8 +40,7 @@ def turn(board)
   input = input_to_index(input)
   if valid_move?(board, input)
     move(board, input)
-  elsif input = gets.strip
-    display_board(board)
-    turn(board)
+  input = gets.strip
+  else
   end
 end
